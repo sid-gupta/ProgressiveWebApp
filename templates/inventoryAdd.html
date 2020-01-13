@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+
+{#<!--{% block content %}-->#}
+<!--<script type="text/javascript" src="../static/js/quagga.min.js"></script>-->
+<!--<script src="../static/js/barcode.js"></script>-->
+<!--<form id="inventoryForm">-->
+<!--    <label>-->
+<!--        Shop Id:-->
+<!--        <input type="text" name="shopId">-->
+<!--    </label>-->
+{#<!--    {% include 'barcode.html' %}-->#}
+<!--    <button type="submit">Add</button>-->
+<!--</form>-->
+
+<!--<div class="added-items-display">-->
+
+<!--</div>-->
+{#<!--{% endblock %}-->#}
+
+{% block content %}
+{% include 'barcode.html' %}
+<script type="text/javascript" src="../static/js/external/quagga.min.js"></script>
+<script src="../static/js/barcode.js"></script>
+{% endblock %}
